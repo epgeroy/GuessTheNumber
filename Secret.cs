@@ -17,7 +17,7 @@ namespace GuessTheNumber
                     )
             )
         { }
-        public Secret(int number)
+        protected Secret(int number)
         {
             _number = number;
         }
