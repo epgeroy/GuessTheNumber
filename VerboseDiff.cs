@@ -13,17 +13,17 @@ namespace GuessTheNumber
         {
             int number = _diff.Number();
 
-            if (number < 0)
+            switch (number)
             {
-                System.Console.WriteLine("Too low.");
-            }
-            else if (number > 0)
-            {
-                System.Console.WriteLine("Too high.");
-            }
-            else
-            {
-                System.Console.WriteLine("Bingo!");
+                case < 0:
+                    System.Console.WriteLine("Too low.");
+                    break;
+                case > 0:
+                    System.Console.WriteLine("Too high.");
+                    break;
+                default:
+                    System.Console.WriteLine("Bingo!");
+                    break;
             }
 
             return number;
